@@ -1,0 +1,172 @@
+/* =======================
+   SECTION
+======================= */
+.projects-section {
+  padding: 100px 0px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* CONTAINER */
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+
+/* =======================
+   MASONRY GRID (4 COLUMNS)
+======================= */
+.projects-grid {
+  column-count: 4;
+  column-gap: 25px;
+}
+
+
+/* =======================
+   CARD
+======================= */
+.project-card {
+  break-inside: avoid;
+  margin-bottom: 25px;
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  -webkit-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -moz-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -ms-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -o-transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* hover */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+/* =======================
+   IMAGE
+======================= */
+.img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+  -webkit-transition: transform 0.7s ease;
+  -moz-transition: transform 0.7s ease;
+  -ms-transition: transform 0.7s ease;
+  -o-transition: transform 0.7s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+
+/* =======================
+   INFO
+======================= */
+.project-info {
+  padding: 16px 16px 18px;
+}
+
+.project-info h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.project-info p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* =======================
+   BOTTOM
+======================= */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.price {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.view {
+  font-size: 13px;
+  color: var(--muted);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.project-card:hover .view {
+  color: var(--primary);
+}
+
+/* REMOVE OUTER STRETCH */
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/* responsive */
+@media (max-width: 1200px) {
+  .projects-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    column-count: 2;
+    column-gap: 15px; /* اختياري عشان المسافة تبقى أنسب على الموبايل */
+  }
+  .project-info {
+    padding: 12px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

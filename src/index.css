@@ -1,0 +1,77 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  -moz-transition: background-color 0.4s ease, color 0.4s ease;
+  -ms-transition: background-color 0.4s ease, color 0.4s ease;
+  -o-transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+/* ======================
+   LIGHT MODE (LUXURY WARM)
+====================== */
+:root {
+  --bg: #fbf8f3;          /* أهدى من الأبيض */
+  --text: #2a2623;
+  --card: #ffffff;
+
+  --primary: #b0895b;     /* ذهبي جلدي أنعم */
+  --secondary: #3b2f28;
+  --accent: #ead9cc;
+
+  --muted: #7f7a74;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-sm: 0 6px 20px rgba(0,0,0,0.05);
+  --shadow-md: 0 18px 50px rgba(0,0,0,0.12);
+}
+
+/* ======================
+   DARK MODE (LUXURY BLACK/BROWN)
+====================== */
+:root.dark {
+  --bg: #0f0d0b;          /* أغمق وأفخم */
+  --text: #f2f0ee;
+  --card: #1a1613;
+
+  --primary: #d4a373;     /* ذهبي ناعم */
+  --secondary: #2a221d;
+  --accent: #c9a98f;
+
+  --muted: #a7a29d;
+
+  --shadow-sm: 0 6px 20px rgba(0,0,0,0.6);
+  --shadow-md: 0 18px 60px rgba(0,0,0,0.75);
+}
+
+/* تحسين عام للأداء البصري */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* سموث سكرول (luxury feel) */
+html {
+  scroll-behavior: smooth;
+}
