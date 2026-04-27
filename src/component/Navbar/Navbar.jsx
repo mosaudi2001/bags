@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ThemeToggle from "../../theme/ThemeToggle/ThemeToggle";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.webp";
 
 export default function Navbar() {
   const navigate = useNavigate();
